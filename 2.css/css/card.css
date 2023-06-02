@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Merriweather:wght@300;400;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    width: 300px;
+    border: 3px solid #b53f3fbf;
+    margin: 10px;
+    padding: 20px;
+    display: inline-block;
+
+}
+
+.card-title{
+font-weight: 700;
+font-size: 25px;
+margin-bottom: 15px;
+
+}
+
+.card-text{
+font-size: 16px;
+
+
+}
+
+.card-center{
+    text-align: center;
+}
+
+.card-start{
+    text-align: left;
+}
+
+.card-end{
+    text-align: end;
+}
+.rounded{
+    border-radius: 10px;
+}
+
+.card-img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.p-none{
+    padding: 0;
+}
+
+.m-none{
+    margin: 0;
+}
+
+.card-body{
+    padding: 10px;
+}
+
+.img-square{
+    aspect-ratio: 1/1;
+    height: auto;
+    object-fit:cover;
+    object-position: center;
+}
+
+.img-float{
+    margin-top: -150px;
+}
+
+.mt-200{
+    margin-top: 200px;
+}
+
+.rr{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.ee{
+    border: 3px solid black;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.mm{
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1;
+}
+
+.cc{
+margin-top: -150px;
+}
+
+.yy{
+    margin-top: 200px;
+}
+.qq{
+    margin: 10px;
+}
+
+.ww{
+    margin: 10px;
+}
