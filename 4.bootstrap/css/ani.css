@@ -1,0 +1,340 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color:azure;
+    padding: 30px;
+}
+
+.heading{
+    margin-bottom: 20px;
+    font-size: 35px;
+    animation: textColor 2s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+    }
+
+@keyframes textColor {
+    0%{
+        color: orangered;
+
+    }
+
+    100%{
+        color: blue;
+
+    }
+    
+}
+
+.boxes{
+
+}
+
+.box{
+    background-color: white;
+    border: 3px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+.box h4{
+    margin-bottom:5px ;
+
+}
+
+.box p{
+    color: gray;
+
+}
+
+/* slide eff */
+
+.slideInLeft  {
+    animation:slideInLeft 2s;
+    animation-fill-mode: both;
+
+}
+
+/* .slideInLeft:nth-child(1){
+animation-delay: 0;
+}
+
+.slideInLeft:nth-child(2){
+    animation-delay: 1s;
+}
+
+
+.slideInLeft:nth-child(3){
+    animation-delay: 2s;
+} */
+
+
+@keyframes slideInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+
+
+
+
+
+
+.slideInTop{
+    animation: slideInTop 2s;
+    animation-fill-mode: both;
+
+}
+/* 
+.slideInTop:nth-child(1){
+animation-delay: 0;
+}
+
+.slideInTop:nth-child(2){
+    animation-delay: 1s;
+}
+
+
+.slideInTop:nth-child(3){
+    animation-delay: 2s;
+} */
+
+
+@keyframes slideInTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+/* fade eff */
+
+/* shake eff */
+
+.shake{
+
+}
+
+.heading:hover{
+    animation: shake 2s reverse 2 linear;
+}
+
+@keyframes shake {
+    0%{
+        transform: translateX(-100px) scaleX(2) scaleY(0.7);
+
+    }
+
+    20%{
+        transform: translateX(100px) scaleX(0.8) scaleY(1.5);
+
+    }
+
+    40%{
+        transform: translateX(-70px) scaleX(1.5) scaleY(0.7);
+
+    }
+
+    60%{
+        transform: translateX(70px) scaleX(0.5) scaleY(0.7);
+
+    }
+
+    80%{
+        transform: translateX(-30px) scaleX(1) scaleY(0.7);
+
+    }
+
+    90%{
+        transform: translateX(30px) scaleX(1.6) scaleY(0.7);
+
+    }
+
+    100%{
+        transform: translateX(0) scaleX(1) scaleY(0.7);
+    }
+
+}
+
+
+
+
+/* scale eff */
+.zoomIn{
+    animation: zoomIn 2s;
+    animation-fill-mode: both;
+
+}
+
+
+/* .zoomIn:nth-child(1){
+    animation-delay: 0;
+
+}
+
+.zoomIn:nth-child(2){
+    animation-delay: 1s;
+    
+}
+
+
+.zoomIn:nth-child(3){
+    animation-delay: 2s;
+    
+} */
+@keyframes zoomIn{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform:scale(1);
+
+    }
+}
+
+.fadeIn{
+    animation:  fadeIn 2s;
+    animation-fill-mode:backwards;
+
+}
+
+/* .fadeIn:nth-child(1){
+    animation-delay: 0;
+
+}
+
+.fadeIn:nth-child(2){
+    animation-delay: 1s;
+    
+}
+
+
+.fadeIn:nth-child(3){
+    animation-delay: 2s;
+    
+} */
+
+@keyframes fadeIn{
+    0%{
+opacity: 0;
+    }
+
+    100%{
+opacity: 1;
+    }
+}
+
+.zoomInLeft{
+    animation: zoomInLeft 2s;
+    animation-fill-mode: both;
+
+}
+
+@keyframes zoomInLeft{
+    0%{
+        
+        transform:scale(0.5)  translateX(-900px);
+        opacity: 0;
+
+    }
+
+    50%{
+        transform:scale(0.5)  translateX(0);
+        opacity: 1;
+
+    }
+
+    100%{
+        
+        transform:scale(1);
+        
+
+    }
+
+}
+
+
+
+
+.zoomOut{
+    animation: zoomOut 2s;
+    animation-direction: reverse;
+    animation-fill-mode: both;
+}
+
+
+/* .zoomOut:nth-child(1){
+    animation-delay: 0;
+
+}
+
+.zoomOut:nth-child(2){
+    animation-delay: 1s;
+    
+}
+
+
+.zoomOut:nth-child(3){
+    animation-delay: 2s;
+    
+} */
+
+@keyframes zoomOut{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform:scale(1);
+
+    }
+
+}
+
+.animation-delay-0{
+    animation-delay: 0;
+}
+
+.animation-delay-1{
+    animation-delay: 1s;
+}
+
+.animation-delay-2{
+    animation-delay: 1.5s;
+}
+
+.animation-delay-3{
+    animation-delay: 2s;
+}
+
+.animation-delay-4{
+    animation-delay: 2.5s;
+}

@@ -1,0 +1,59 @@
+
+$primary :#482ff7;
+$secondary : #d72323;
+
+// $input-padding-x:30px;
+// $btn-padding-x:30px;
+// $btn-padding-y:15px;
+// $btn-font-weight:bold;
+// $btn-font-family:monospace;
+// $btn-border-radius:20px;
+
+
+
+
+// $border-width:                3px;
+// $border-widths: (
+//   1: 6px,
+//   2: 9px,
+//   3: 3px,
+//   4: 4px,
+//   5: 5px
+// );
+// $border-style:                dashed;
+// $border-color:                gray;
+// $border-color-translucent:     rgba9black,  .1750;
+
+
+// $spacer: 1rem; //margin//
+// $spacers: (
+//   0: 0,
+//   1: $spacer * .25,
+//   2: $spacer * .5,
+//   3: $spacer,
+//   4: $spacer * 1.5,
+//   5: $spacer * 3,
+// );
+
+$navbar-nav-link-padding-x:2rem;
+$modal-backdrop-bg: pink;
+$modal-backdrop-opacity:0.5;
+
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+//   xl: 1140px,
+//   xxl: 1320px
+);
+
+
+
+@import"../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+//brand color -primary secondary
+//status color -success,danger,warning
+//light and dark 
+
