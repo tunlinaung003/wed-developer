@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  // xl: 1140px,
+  // xxl: 1320px
+);
+
+$btn-border-radius:1rem;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 9,
+  8: $spacer * 12,
+
+);
+
+$font-family-sans-serif:'Big Shoulders Display', cursive;
+
+
+
+
+$primary : hsl(31, 77%, 52%);
+$info :hsl(179, 100%, 13%);
+$Dark : hsl(184, 100%, 22%);
+$secondary:hsla(0, 0%, 100%, 0.75);
+$light: hsl(0, 0%, 95%); 
+
+$font-size-base:1rem;
+$btn-padding-x:2rem;
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body{
+  background-color: $light;
+}
+p{
+  font-family:'Lexend Deca', sans-serif;
+}
+
+@include media-breakpoint-up(md){
+}

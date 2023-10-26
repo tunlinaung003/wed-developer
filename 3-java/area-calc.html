@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
         .mb{
             margin-bottom: 20px;
@@ -14,60 +13,81 @@
             width: 200px;
         }
     </style>
+
+<link rel="stylesheet" href="./node_modules/animate.css/animate.css">
+
 </head>
 <body>
     
-
-    <h1>Area calculator</h1>
+    <h1 class="">Area Calculator</h1>
     <div class="mb">
-        <span>Result : </span> <span id="result"></span>
-        <button id="clear">clear</button>
-        <button id="store">store</button>
+        <span>Result : </span><span id="result"></span>
+        <button id="clear">Clear</button>
+        <button id="store">Store</button>
     </div>
-
-    <input type="text" id="width" placeholder="Input Width">
-    <input type="text" id="breadth" placeholder="Input Breadth">
-    <button id="calc">
-        Calculator
-    </button>
-
+    <input type="text" id="width" placeholder="Input width">
+    <input type="text" id="breadth" placeholder="Input breadth">
+    <button id="calc">Calculate</button>
 
     <ul id="results">
 
     </ul>
 
+
     <script>
 
         //logic
-        // const calcArea  = (width,breadth) => {
-        //     const result = width * breadth+"sqft";
-        // console.log(result);
+
+        // const calcArea =(width,breadth) => {
+        //     const result = width*breadth + "sqft";
+        //     console.log(result);
         // };
 
-        //select element
-        const inputWidth = document.getElementById("width");
-        const inputBreadth = document.getElementById("breadth");
-        const calc = document.getElementById("calc");
-        const resultElement = document.getElementById("result");
-        const clear = document.getElementById("clear");
-        const store = document.getElementById("store");
-        const results = document.getElementById("results");
+
+
+        //select element\
+        const inputWidth =document.getElementById("width");
+        const inputBreadth =document.getElementById("breadth");
+        const calc =document.getElementById("calc");
+        const resultElement =document.getElementById("result");
+        const clear=document.getElementById("clear");
+        const store =document.getElementById("store");
+        const results =document.getElementById("results");
+
+        
 
         //event listen
         calc.onclick = () => {
-            const result = inputWidth.value * inputBreadth.value + "sqft";
-            resultElement.innerText=`${inputWidth.value}ft * ${inputBreadth.value}ft = ${result}`;
-            inputWidth.value=inputBreadth.value =null
+            const result = inputWidth.value*inputBreadth.value + "sqft";
+            resultElement.innerText= `${inputWidth.value}ft * ${inputBreadth.value}ft =${result}`;
+            inputWidth.value=inputBreadth.value=null;
         }
 
-        clear.onclick = () => {
+        clear.onclick=() => {
+            resultElement.innerText= "";
+        }
+
+        store.onclick= () => {
+            // results.innerHTML +=`<li >${resultElement.innerText} </li>`
+
+            const li =document.createElement("li");
+            li.classlist.add("animate__animated", "animate__fadeInDown");
+            li.innerText = resultElement.innerText;
+
+            results.append(li);
+
             resultElement.innerText = null;
+
         }
 
-        store.onclick = () => {
-            results.innerHTML += `<li>${resultElement.innerText}</li>`;
-            resultElement.innerText=null;
-        }
+
+        const h1 =document.querySelector("h1");
+        const p =document.createElement("p");
+        p.innerText ="this is before";
+
+        h1.before(p);
+        console.log(h1);
+
 
 
     </script>

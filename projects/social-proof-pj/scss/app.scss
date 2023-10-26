@@ -1,0 +1,77 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  // xxl: 1320px
+);
+
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 9,
+  8: $spacer * 12,
+
+);
+
+$h1-font-size:3.5rem;
+$font-size-base:0.9rem;
+
+$dark:hsl(300, 43%, 22%);
+$light:  hsl(300, 24%, 96%);
+$info:hsl(303, 10%, 53%);
+
+$white :hsl(0, 0%, 100%);
+$primary: hsl(333, 80%, 67%);
+
+
+
+@import"../node_modules/bootstrap/scss/bootstrap.scss";
+
+.one{
+    // background-image: url(../images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    // width: 100%;
+    // height: 100%;
+}
+
+
+.button{
+    transform: translate(65px,65px);
+   
+
+}
+
+// .button-c{
+// padding-left:30px ;
+// }
+
+// .button-e{
+//     padding-left:60px ;
+// }
+
+.brand-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  
+}
+
+.two{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@include media-breakpoint-up(md){
+  .second{
+    padding-left: 0px;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // let x =5;
+    
+        // setTimeout(()=>{
+        //     x=20;
+        // },3000)
+
+        // console.log(x);
+
+        //     const x =5
+
+        //    const exc = (resolve,reject)=> {
+
+        //     setTimeout(()=>{
+        //         try{
+        //             x=10;
+        //         resolve(x)
+        //         }catch(err){
+        //             reject(err)
+        //         }
+        //     },3000)
+            
+        //     };
+
+        //    const p = new Promise(exc);
+
+        // //    console.log(p);
+
+        //     p.then((x)=> console.log("success")).catch((error)=>{
+        //         console.log(error);
+        //     })
+
+
+        // const f = fetch("https://fakestoreapi.com/products/1");
+        // // console.log(f);
+        // f.then((res) => console.log(res))
+        // .catch(err => console.log(err))
+        // .then(data => console.log(data))
+
+        let data = null;
+
+
+        const exc = (resolve)=> {
+            const xhr = new XMLHttpRequest();
+            xhr.open("Get",".//my.txt");
+
+            xhr.addEventListener("readystatechange",()=> {
+                if(xhr.readyState === 4 && xhr.status === 200){
+                    data=xhr.responseText;
+                    resolve(data);
+                }
+            });
+            xhr.send();
+        }
+        
+        const p = new Promise(exc);
+        p.then(res => console.log(res))
+
+    </script>
+</body>
+</html>
